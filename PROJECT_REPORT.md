@@ -104,7 +104,7 @@ The specific objectives are:
 
 Table 1: Technologies & Modules Used 
 S.No | Component Name | Quantity | Description
-1 | React 18 | 1 | The core User Interface library used to process visual logic and manipulate DOM elements.
+1 | React 19 | 1 | The core User Interface library used to process visual logic and manipulate DOM elements.
 2 | Vite | 1 | A build tool providing blazing-fast hot module replacement and network proxying.
 3 | TypeScript | 1 | Adds rigid typing architecture to ensure task objects are handled safely during execution.
 4 | JSON-Server | 1 | Acts as a lightweight REST API backend database storing the workload arrays.
@@ -133,7 +133,7 @@ The system is based on an abstracted modular React architecture, which acts as t
 
 <div align="center">
   <h3>[ INSERT FIG 1: PROJECT FOLDER ARCHITECTURE SCREENSHOT HERE ]</h3>
-  <p><i>(Take a screenshot of your VS Code folder tree showing backend, src/frontend, src/ui)</i></p>
+  <p><i>(Take a screenshot of your VS Code folder tree showing db.json, src/frontend, and src/ui)</i></p>
 </div>
 
 <br>

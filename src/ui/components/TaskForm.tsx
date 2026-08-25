@@ -1,4 +1,4 @@
-import { FormEvent } from 'react';
+import type { FormEvent } from 'react';
 import { Plus } from 'lucide-react';
 import type { TaskCategory } from '../../frontend/types';
 

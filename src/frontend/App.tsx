@@ -1,4 +1,5 @@
-import { useState, useEffect, FormEvent } from 'react';
+import { useState, useEffect } from 'react';
+import type { FormEvent } from 'react';
 import type { AcademicTask, TaskCategory } from './types';
 import { calculatePriority, sortTasksByPriority } from './types';
 import { fetchTasks, createTask, updateTaskCompletion, deleteTaskApi } from './api';

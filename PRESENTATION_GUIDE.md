@@ -1,55 +1,66 @@
-# How to Run NextQuest for Your Presentation
+# How to Run NextQuest for a Presentation
 
-When you are ready to present this tomorrow, follow this step-by-step guide to get everything running perfectly, including the mobile sync feature!
+NextQuest has two local services: a JSON Server API and the Vite frontend. Run each in its own terminal from the project root.
 
-## Step 1: Open Your Terminals
-Since there are two moving parts (the database and the web interface), you will need **two separate Command Prompt or PowerShell windows** open.
+## 1. Install dependencies
 
-1. Open your terminal.
-2. Navigate to your project folder by typing:
-   ```cmd
-   cd c:\Users\thisi\OneDrive\Documents\NextQuest
-   ```
-3. Do this for both terminal windows so they are both inside the `NextQuest` folder.
-
-## Step 2: Start the Database (Terminal 1)
-In the first terminal, start the database server that handles syncing.
-Copy and paste this command and hit Enter:
-```cmd
-npx json-server --watch backend/db.json --port 5000 --host 0.0.0.0
+```bash
+npm install
 ```
-> [!NOTE] 
-> You should see a smiley face `{^_^}` and it will say it is watching `db.json`. Leave this window open in the background!
 
-## Step 3: Start the Web Server (Terminal 2)
-In the second terminal, boot up the React application and expose it to your Wi-Fi network.
-Copy and paste this command and hit Enter:
-```cmd
+## 2. Start the database API
+
+In Terminal 1:
+
+```bash
+npx json-server --watch db.json --port 5000 --host 0.0.0.0
+```
+
+Leave this terminal running. The API will serve tasks at `http://localhost:5000/tasks`.
+
+## 3. Start the frontend
+
+In Terminal 2:
+
+```bash
 npm run dev -- --host
 ```
-> [!NOTE] 
-> This will boot up extremely fast. Look at the output—it will give you your **Local** link (for your laptop) and your **Network** links (for your phone).
 
-## Step 4: The Presentation Demo
+Open the local URL shown by Vite, usually `http://localhost:5173/`.
 
-### Showing the Laptop UI
-1. Open your laptop's web browser (Chrome, Edge, etc.).
-2. Go to `http://localhost:5173/`. 
-3. Show off the glassmorphism dark theme UI.
+## 4. Presentation flow
 
-### Showing the Phone Sync UI
-1. Ensure your phone is connected to the exact same Wi-Fi network as the laptop.
-2. Check the output of **Terminal 2**. Look for the line that says `➜  Network: http://...`.
-3. Type that exact URL into your phone's browser (e.g., `http://192.168.1.15:5173/`).
-4. **The Cool Part:** Add a task on your laptop. Tell the audience you just submitted it. Then, immediately swipe down to refresh the page on your phone, and the task will instantly pop up on the mobile layout! 
+### Laptop demo
 
-## Troubleshooting / Resetting Data
-If you want to start your presentation with a completely clean slate:
-1. Open the file `db.json` in your code editor.
-2. Replace all its contents so it looks exactly like this:
+1. Open the local Vite URL in a browser.
+2. Point out the workload stress meter.
+3. Add a task with a close deadline and several hours of effort.
+4. Show how it rises in the Priority Focus view and receives an urgency indicator.
+5. Mark a task complete, then show it in the completed section under All Tasks.
+
+### Phone or second-device demo
+
+1. Connect the second device to the same Wi-Fi network as the computer.
+2. Use the **Network** URL printed by Vite, such as `http://192.168.1.15:5173/`.
+3. Add or complete a task on one device.
+4. Refresh the other device to load the latest data from JSON Server.
+
+Both devices must be able to reach the computer’s local network address, and both services must remain running.
+
+## Reset the demo data
+
+To start with an empty workload, replace the contents of `db.json` with:
+
 ```json
 {
   "tasks": []
 }
 ```
-3. Save the file. The database will instantly reset!
+
+Restart JSON Server if it does not detect the change automatically.
+
+## Troubleshooting
+
+- If the task list is empty or does not load, confirm JSON Server is running on port `5000`.
+- If the phone cannot open the app, confirm both devices are on the same Wi-Fi and that Vite was started with `--host`.
+- If changes do not appear on another device, refresh the page; the app uses the shared JSON Server data but does not stream live updates.

@@ -101,7 +101,6 @@ src/
 
 db.json              # JSON Server data store
 vite.config.ts       # React/Vite setup and /api proxy
-Wobbly/              # Separate embedded upstream project included in the workspace
 ```
 
 ## Current limitations
@@ -109,7 +108,7 @@ Wobbly/              # Separate embedded upstream project included in the worksp
 - Data is stored locally in JSON Server; there is no cloud authentication or hosted database.
 - The frontend expects the API to be running on port `5000`.
 - The interface uses optimistic updates, so a failed API request is logged to the browser console rather than shown as an in-app error.
-- `npm run build` currently reports two TypeScript type-only import errors in `src/frontend/App.tsx` and `src/ui/components/TaskForm.tsx`; `npm run lint` passes.
+- `npm run build` and `npm run lint` should be run locally before deployment; the current source fixes the previous type-only import errors.
 - The current project has no automated test suite.
 
 ## License
