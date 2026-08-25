@@ -1,0 +1,130 @@
+{
+  "tasks": [
+    {
+      "id": "1776873917330sld5djn",
+      "title": "Physics",
+      "category": "Lab",
+      "dueDate": "2026-04-24",
+      "effortHours": 2,
+      "completed": true,
+      "priorityScore": 44
+    },
+    {
+      "id": "17768742772273tuut1q",
+      "title": "Iot",
+      "category": "Assignment",
+      "dueDate": "2026-04-24",
+      "effortHours": 5,
+      "completed": true,
+      "priorityScore": 38
+    },
+    {
+      "id": "1776874661713uazj133",
+      "title": "Physcis",
+      "category": "Assignment",
+      "dueDate": "2026-04-23",
+      "effortHours": 5,
+      "completed": true,
+      "priorityScore": 14
+    },
+    {
+      "id": "177687747434312mla7h",
+      "title": "IoT",
+      "category": "Project",
+      "dueDate": "2026-04-23",
+      "effortHours": 5,
+      "completed": true,
+      "priorityScore": 14
+    },
+    {
+      "id": "1776877491353crige2j",
+      "title": "French",
+      "category": "Assignment",
+      "dueDate": "2026-04-23",
+      "effortHours": 2,
+      "completed": true,
+      "priorityScore": 20
+    },
+    {
+      "id": "1776877555748y53mqgh",
+      "title": "French",
+      "category": "Assignment",
+      "dueDate": "2026-04-23",
+      "effortHours": 4,
+      "completed": true,
+      "priorityScore": 16
+    },
+    {
+      "id": "1776931777963mfpjqfq",
+      "title": "SQR",
+      "category": "Project",
+      "dueDate": "2026-04-25",
+      "effortHours": 5,
+      "completed": true,
+      "priorityScore": 38
+    },
+    {
+      "id": "1776931792015n6by8r2",
+      "title": "Web Tech",
+      "category": "Project",
+      "dueDate": "2026-04-24",
+      "effortHours": 3,
+      "completed": true,
+      "priorityScore": 18
+    },
+    {
+      "id": "1776933780411541ikgv",
+      "title": "ood",
+      "category": "Assignment",
+      "dueDate": "2026-05-01",
+      "effortHours": 5,
+      "completed": true,
+      "priorityScore": 182
+    },
+    {
+      "id": "17769338489003pfcyob",
+      "title": "physics",
+      "category": "Project",
+      "dueDate": "2026-04-24",
+      "effortHours": 6,
+      "completed": true,
+      "priorityScore": 12
+    },
+    {
+      "id": "1776935383940pvxb150",
+      "title": "IoT Project",
+      "category": "Project",
+      "dueDate": "2026-04-25",
+      "effortHours": 6,
+      "completed": true,
+      "priorityScore": 36
+    },
+    {
+      "id": "1777010925629tp7fvww",
+      "title": "Web tech",
+      "category": "Exam",
+      "dueDate": "2026-04-28",
+      "effortHours": 5,
+      "completed": false,
+      "priorityScore": 86
+    },
+    {
+      "id": "1777011793388bedlfl8",
+      "title": "French",
+      "category": "Exam",
+      "dueDate": "2026-04-29",
+      "effortHours": 2,
+      "completed": false,
+      "priorityScore": 116
+    },
+    {
+      "id": "1777011814209tsgwlxl",
+      "title": "iot",
+      "category": "Lab",
+      "dueDate": "2026-04-30",
+      "effortHours": 6,
+      "completed": false,
+      "priorityScore": 132
+    }
+  ]
+}
