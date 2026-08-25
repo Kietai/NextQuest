@@ -1,3 +1,0 @@
-npm run dev -- --host
-
-npx json-server --watch db.json --port 5000 --host 0.0.0.0
